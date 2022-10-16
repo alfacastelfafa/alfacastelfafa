@@ -2,9 +2,9 @@ import fetch from 'node-fetch'
 let handler = async(m, { conn, text, usedPrefix, command }) => {
 let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
 
-let str = `*https://actsho.blogspot.com/2022/09/actshop.html*
+let str = `*https://www.youtube.com/channel/UCMx4e8anOq_Olt2nMSv0Cow*
 
-List Jualan
+-List Jualan-
 Tiktok View
 Sewa Bot
 Render Mc
@@ -13,8 +13,8 @@ Baner
 Jasa Edit
 *INFO SELANJUTNYA*
 https://actsho.blogspot.com/2022/09/actshop.html
-
 JIKA MAU BELI CHAT OWNER
+
 wa.me/6289675850011`
 let wibu = `https://api-reysekha.herokuapp.com/api/random/cosplay?apikey=apirey` 
 let thumb = await(await fetch(wibu)).buffer()
@@ -29,8 +29,8 @@ conn.sendButtonDoc(m.chat, str, wm,'Maksih Yg share','Bilek', m, { contextInfo: 
   }
   } }) 
           }
-handler.help = ['source code']
+handler.help = ['shop by']
 handler.tags = ['info']
-handler.command =  /^(shopact)$/i
+handler.command =  /^(actshop)$/i
 
 export default handler
