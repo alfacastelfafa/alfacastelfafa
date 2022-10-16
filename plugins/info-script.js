@@ -2,23 +2,27 @@ import fetch from 'node-fetch'
 let handler = async(m, { conn, text, usedPrefix, command }) => {
 let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
 
-let str = `*https://www.youtube.com/channel/UCMx4e8anOq_Olt2nMSv0Cow*
+let str = `*https://actsho.blogspot.com/2022/09/actshop.html*
 
-Pengen mentahan nya ?
-Nih ada santai bro....
-https://github.com/ImYanXiao/Elaina-MultiDevice
+List Jualan
+Tiktok View
+Sewa Bot
+Render Mc
+Logo
+Baner
+Jasa Edit
+*INFO SELANJUTNYA*
+https://actsho.blogspot.com/2022/09/actshop.html
 
-Pengen yang udah di recode oleh owner?
-Script bot ini dijual bila kalian mau bisa chat owner
-
-wa.me/6282127487538`
+JIKA MAU BELI CHAT OWNER
+wa.me/6289675850011`
 let wibu = `https://api-reysekha.herokuapp.com/api/random/cosplay?apikey=apirey` 
 let thumb = await(await fetch(wibu)).buffer()
-conn.sendButtonDoc(m.chat, str, wm,'Thankyou','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "https://Instagram.com/_ctzhid",
+conn.sendButtonDoc(m.chat, str, wm,'Maksih Yg share','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    mediaUrl: "https://Instagram.com/fafago1kk",
     mediaType: "VIDEO",
     description: "https://www.instagram.com/p/CevoCg5hG-p/?utm_source=ig_web_copy_link", 
-    title: 'WH-MODS-DEV-V1 MultiDevice',
+    title: 'CastwlMawon MultiDevice',
     body: wm,
     thumbnail: thumb,
     sourceUrl: sgc
@@ -27,6 +31,6 @@ conn.sendButtonDoc(m.chat, str, wm,'Thankyou','Bilek', m, { contextInfo: { exter
           }
 handler.help = ['source code']
 handler.tags = ['info']
-handler.command =  /^(script|sc)$/i
+handler.command =  /^(shopact)$/i
 
 export default handler
