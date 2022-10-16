@@ -31,6 +31,6 @@ conn.sendButtonDoc(m.chat, str, wm,'Maksih Yg share','Bilek', m, { contextInfo: 
           }
 handler.help = ['shop by']
 handler.tags = ['info']
-handler.command =  /^(actshop)$/i
+handler.command =  /^(shopact)$/i
 
 export default handler
